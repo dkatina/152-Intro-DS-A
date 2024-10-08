@@ -16,6 +16,8 @@ Lists are ordered collections of items, allowing for sequential storage and retr
 ```python
 # Example of a list in the library
 fiction_books = ["Dune", "1984", "Brave New World", "Neuromancer"]
+
+fiction_books[0] #Output "Dune
 ```
 
 ##### Dictionaries:
@@ -29,6 +31,8 @@ book_locations = {
     "Brave New World": "Fiction Section, Shelf 3",
     "Neuromancer": "Fiction Section, Shelf 4"
 }
+
+book_locations["1984"] #Ouptut: "Fiction Section, Shelf 2"
 ```
 
 ##### Linked Lists:
@@ -98,6 +102,7 @@ print(treasures[1])  # Accessing the second stone
 
 **Removing Elements**: 
 .remove() is also Linear, becuase once the item is removed, the other items have to slide over to fill in the gaps.
+.pop() is constant, because when removing from the back of the list I don't have to re-order my items.
 **Sorting Elements**: 
 .sort(), is based off of the Timsort algorith which is O(n logn)
 
